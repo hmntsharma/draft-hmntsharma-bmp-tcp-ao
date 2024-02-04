@@ -7,7 +7,7 @@
 <title>TCP-AO Protection for BGP Monitoring Protocol (BMP)</title>
 <meta content="Hemant Sharma" name="author">
 <meta content="
-       This document outlines the utilization of the Transmission Control Protocol - Authentication Option (TCP-AO), as prescribed in RFC5295, for the authentication of Border Gateway Protocol Monitoring Protocol (BMP) sessions, as specified in RFC7854. The intent is to heighten security within the underlying Transmission Control Protocol (TCP) transport layer, ensuring the authentication of BMP sessions conducted between routers and BMP stations. 
+       This document outlines the utilization of the Transmission Control Protocol - Authentication Option (TCP-AO), as prescribed in RFC5925, for the authentication of Border Gateway Protocol Monitoring Protocol (BMP) sessions, as specified in RFC7854. The intent is to heighten security within the underlying Transmission Control Protocol (TCP) transport layer, ensuring the authentication of BMP sessions established between routers and BMP stations. 
     " name="description">
 <meta content="xml2rfc 3.19.2" name="generator">
 <meta content="BMP Security" name="keyword">
@@ -1061,7 +1061,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">TCP-AO Protection for BGP Monitoring Protocol (BMP)</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">This document outlines the utilization of the Transmission Control Protocol - Authentication Option (TCP-AO), as prescribed in RFC5295, for the authentication of Border Gateway Protocol Monitoring Protocol (BMP) sessions, as specified in RFC7854. The intent is to heighten security within the underlying Transmission Control Protocol (TCP) transport layer, ensuring the authentication of BMP sessions conducted between routers and BMP stations.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">This document outlines the utilization of the Transmission Control Protocol - Authentication Option (TCP-AO), as prescribed in RFC5925, for the authentication of Border Gateway Protocol Monitoring Protocol (BMP) sessions, as specified in RFC7854. The intent is to heighten security within the underlying Transmission Control Protocol (TCP) transport layer, ensuring the authentication of BMP sessions established between routers and BMP stations.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-discussion-venues">
@@ -1146,7 +1146,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-introduction">
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
-<p id="section-1-1">The BGP Monitoring Protocol (BMP), as specified in RFC7854, recommends employing Internet Protocol Security (IPSec) from RFC4303 to mitigate security concerns related to the Transmission Control Protocol (TCP) session between routers and the BMP station managing BGP route collection. Recognizing the practical limitations of IPSec, this document underscores the preference for the use of Transmission Control Protocol - Authentication Option (TCP-AO) as the authentication method of choice for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in RFC5295.<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-1">The BGP Monitoring Protocol (BMP), as specified in RFC7854, recommends employing Internet Protocol Security (IPSec) from RFC4303 to mitigate security concerns related to the Transmission Control Protocol (TCP) session between routers and the BMP station managing BGP route collection. Recognizing the practical limitations of IPSec, this document underscores the preference for the use of Transmission Control Protocol - Authentication Option (TCP-AO) as the authentication method of choice for TCP-based network protocols such as BGP and LDP. A comprehensive discussion of TCP-AO is provided in RFC5925.<a href="#section-1-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="tcp-ao-protection-for-bgp-monitoring-protocol-bmp">
@@ -1154,7 +1154,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-tcp-ao-protection-for-bgp-m">
 <a href="#section-2" class="section-number selfRef">2. </a><a href="#name-tcp-ao-protection-for-bgp-m" class="section-name selfRef">TCP-AO Protection for BGP Monitoring Protocol (BMP)</a>
       </h2>
-<p id="section-2-1">The BGP Monitoring Protocol (BMP) outlined in RFC7854 plays a crucial role in network management by allowing routers to share information about their BGP tables, helping operators monitor and troubleshoot their networks effectively. However, the security considerations associated with BMP have become increasingly critical in light of evolving cyber threats. This document addresses these concerns by introducing a framework that utilizes the Transmission Control Protocol - Authentication Option (TCP-AO), specified in RFC5295, to safeguard BMP sessions.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-1">The BGP Monitoring Protocol (BMP) outlined in RFC7854 plays a crucial role in network management by allowing routers to share information about their BGP tables, helping operators monitor and troubleshoot their networks effectively. However, the security considerations associated with BMP have become increasingly critical in light of evolving cyber threats. This document proposes that these concerns be addressed by introducing a framework that utilizes the Transmission Control Protocol - Authentication Option (TCP-AO), specified in RFC5925, to safeguard BMP sessions.<a href="#section-2-1" class="pilcrow">¶</a></p>
 <p id="section-2-2">Extending this security measure to BMP helps mitigate risks associated with unauthorized access, tampering, and other potential security vulnerabilities. By integrating TCP-AO into BMP implementations, network operators can establish a more resilient and trustworthy foundation for BGP monitoring activities.<a href="#section-2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1180,9 +1180,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
       </h2>
 <dl class="references">
-<dt id="RFC5295">[RFC5295]</dt>
+<dt id="RFC5925">[RFC5925]</dt>
       <dd>
-<span class="refAuthor">Salowey, J.</span>, <span class="refAuthor">Dondeti, L.</span>, <span class="refAuthor">Narayanan, V.</span>, and <span class="refAuthor">M. Nakhjiri</span>, <span class="refTitle">"Specification for the Derivation of Root Keys from an Extended Master Session Key (EMSK)"</span>, <span class="seriesInfo">RFC 5295</span>, <span class="seriesInfo">DOI 10.17487/RFC5295</span>, <time datetime="2008-08" class="refDate">August 2008</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc5295">https://www.rfc-editor.org/rfc/rfc5295</a>&gt;</span>. </dd>
+<span class="refAuthor">Touch, J.</span>, <span class="refAuthor">Mankin, A.</span>, and <span class="refAuthor">R. Bonica</span>, <span class="refTitle">"The TCP Authentication Option"</span>, <span class="seriesInfo">RFC 5925</span>, <span class="seriesInfo">DOI 10.17487/RFC5925</span>, <time datetime="2010-06" class="refDate">June 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc5925">https://www.rfc-editor.org/rfc/rfc5925</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC7854">[RFC7854]</dt>
     <dd>

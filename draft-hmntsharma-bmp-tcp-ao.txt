@@ -14,12 +14,12 @@ Expires: 7 August 2024
 Abstract
 
    This document outlines the utilization of the Transmission Control
-   Protocol - Authentication Option (TCP-AO), as prescribed in RFC5295,
+   Protocol - Authentication Option (TCP-AO), as prescribed in RFC5925,
    for the authentication of Border Gateway Protocol Monitoring Protocol
    (BMP) sessions, as specified in RFC7854.  The intent is to heighten
    security within the underlying Transmission Control Protocol (TCP)
    transport layer, ensuring the authentication of BMP sessions
-   conducted between routers and BMP stations.
+   established between routers and BMP stations.
 
 Discussion Venues
 
@@ -77,7 +77,7 @@ Table of Contents
    Transmission Control Protocol - Authentication Option (TCP-AO) as the
    authentication method of choice for TCP-based network protocols such
    as BGP and LDP.  A comprehensive discussion of TCP-AO is provided in
-   RFC5295.
+   RFC5925.
 
 2.  TCP-AO Protection for BGP Monitoring Protocol (BMP)
 
@@ -86,10 +86,10 @@ Table of Contents
    about their BGP tables, helping operators monitor and troubleshoot
    their networks effectively.  However, the security considerations
    associated with BMP have become increasingly critical in light of
-   evolving cyber threats.  This document addresses these concerns by
-   introducing a framework that utilizes the Transmission Control
-   Protocol - Authentication Option (TCP-AO), specified in RFC5295, to
-   safeguard BMP sessions.
+   evolving cyber threats.  This document proposes that these concerns
+   be addressed by introducing a framework that utilizes the
+   Transmission Control Protocol - Authentication Option (TCP-AO),
+   specified in RFC5925, to safeguard BMP sessions.
 
    Extending this security measure to BMP helps mitigate risks
    associated with unauthorized access, tampering, and other potential
@@ -109,11 +109,9 @@ Table of Contents
 
 5.  Informative References
 
-   [RFC5295]  Salowey, J., Dondeti, L., Narayanan, V., and M. Nakhjiri,
-              "Specification for the Derivation of Root Keys from an
-              Extended Master Session Key (EMSK)", RFC 5295,
-              DOI 10.17487/RFC5295, August 2008,
-              <https://www.rfc-editor.org/rfc/rfc5295>.
+   [RFC5925]  Touch, J., Mankin, A., and R. Bonica, "The TCP
+              Authentication Option", RFC 5925, DOI 10.17487/RFC5925,
+              June 2010, <https://www.rfc-editor.org/rfc/rfc5925>.
 
    [RFC7854]  Scudder, J., Ed., Fernando, R., and S. Stuart, "BGP
               Monitoring Protocol (BMP)", RFC 7854,
