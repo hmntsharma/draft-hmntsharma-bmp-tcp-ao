@@ -100,15 +100,15 @@ Table of Contents
    TCP-AO is not intended as a direct substitute for IPSec, nor is it
    suggested as such in this document.
 
-   As outlined in section '3.2.  Connection Establishment and
-   Termination' of RFC 7854, BMP operates as a unidirectional protocol,
+   As outlined in section "3.2.  Connection Establishment and
+   Termination" of RFC 7854, BMP operates as a unidirectional protocol,
    meaning no messages are transmitted from the monitoring station to
    the monitored router.  Consequently, BMP lacks an effective means of
    tracking a session between the router and the station.  It relies on
-   the underlying TCP session, supported by TCP keepalives, to maintain
-   session activity.  Therefore, it is recommended to authenticate the
-   end-to-end TCP session between the router and the BMP station using
-   TCP-AO.
+   the underlying TCP session, supported by TCP keepalives (RFC1122), to
+   maintain session activity.  Therefore, it is recommended to
+   authenticate the end-to-end TCP session between the router and the
+   BMP station using TCP-AO.
 
 3.  Security Considerations
 
@@ -133,9 +133,9 @@ Table of Contents
 
 Acknowledgments
 
-   This document is a result of BMP integration into the network.  While
-   TCP-AO safeguards other TCP protocols, BMP lacks the same level of
-   protection within this context.
+   This document is an outcome of the experiences gained through
+   implementing BMP.  While TCP-AO safeguards other TCP protocols, BMP
+   lacks the same level of protection within this context.
 
 Author's Address
 

@@ -1157,7 +1157,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-2-1">The BGP Monitoring Protocol (BMP) outlined in RFC7854 plays a crucial role in network management by allowing routers to share information about their BGP tables, helping operators monitor and troubleshoot their networks effectively. However, the security considerations associated with BMP have become increasingly critical in light of evolving cyber threats. This document proposes that these concerns be addressed by introducing a framework that utilizes the Transmission Control Protocol - Authentication Option (TCP-AO), specified in RFC5925, to safeguard BMP sessions.<a href="#section-2-1" class="pilcrow">¶</a></p>
 <p id="section-2-2">Extending this security measure to BMP helps mitigate risks associated with unauthorized access, tampering, and other potential security vulnerabilities. By integrating TCP-AO into BMP implementations, network operators can establish a more resilient and trustworthy foundation for BGP monitoring activities.<a href="#section-2-2" class="pilcrow">¶</a></p>
 <p id="section-2-3">TCP-AO is not intended as a direct substitute for IPSec, nor is it suggested as such in this document.<a href="#section-2-3" class="pilcrow">¶</a></p>
-<p id="section-2-4">As outlined in section '3.2. Connection Establishment and Termination' of RFC 7854, BMP operates as a unidirectional protocol, meaning no messages are transmitted from the monitoring station to the monitored router. Consequently, BMP lacks an effective means of tracking a session between the router and the station. It relies on the underlying TCP session, supported by TCP keepalives, to maintain session activity. Therefore, it is recommended to authenticate the end-to-end TCP session between the router and the BMP station using TCP-AO.<a href="#section-2-4" class="pilcrow">¶</a></p>
+<p id="section-2-4">As outlined in section "3.2. Connection Establishment and Termination" of RFC 7854, BMP operates as a unidirectional protocol, meaning no messages are transmitted from the monitoring station to the monitored router. Consequently, BMP lacks an effective means of tracking a session between the router and the station. It relies on the underlying TCP session, supported by TCP keepalives (RFC1122), to maintain session activity. Therefore, it is recommended to authenticate the end-to-end TCP session between the router and the BMP station using TCP-AO.<a href="#section-2-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="security-considerations">
@@ -1198,7 +1198,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-A-1">This document is a result of BMP integration into the network. While TCP-AO safeguards other TCP protocols, BMP lacks the same level of protection within this context.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">This document is an outcome of the experiences gained through implementing BMP. While TCP-AO safeguards other TCP protocols, BMP lacks the same level of protection within this context.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
