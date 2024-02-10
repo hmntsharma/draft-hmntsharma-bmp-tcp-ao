@@ -4,8 +4,8 @@
 
 GROW                                                           H. Sharma
 Internet-Draft                                                  Vodafone
-Intended status: Informational                           8 February 2024
-Expires: 11 August 2024
+Intended status: Informational                          10 February 2024
+Expires: 13 August 2024
 
 
           TCP-AO Protection for BGP Monitoring Protocol (BMP)
@@ -43,7 +43,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 August 2024.
+   This Internet-Draft will expire on 13 August 2024.
 
 Copyright Notice
 
@@ -72,12 +72,11 @@ Table of Contents
    recommends employing Internet Protocol Security (IPSec) from RFC4303
    to mitigate security concerns related to the Transmission Control
    Protocol (TCP) session between routers and the BMP station managing
-   BGP route collection.  Recognizing the practical limitations of
-   IPSec, this document underscores the preference for the use of
-   Transmission Control Protocol - Authentication Option (TCP-AO) as the
-   authentication method of choice for TCP-based network protocols such
-   as BGP and LDP.  A comprehensive discussion of TCP-AO is provided in
-   RFC5925.
+   BGP route collection.  This document underscores the preference for
+   the use of Transmission Control Protocol - Authentication Option
+   (TCP-AO) as the authentication method of choice for TCP-based network
+   protocols such as BGP and LDP.  A comprehensive discussion of TCP-AO
+   is provided in RFC5925.
 
 2.  TCP-AO Protection for BGP Monitoring Protocol (BMP)
 
