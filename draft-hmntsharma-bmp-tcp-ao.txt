@@ -4,9 +4,9 @@
 
 GROW                                                           H. Sharma
 Internet-Draft                                                  Vodafone
-Updates: 7854 (if approved)                                11 April 2024
-Intended status: Informational                                          
-Expires: 13 October 2024
+Updates: 7854 (if approved)                                      J. Haas
+Intended status: Informational                          Juniper Networks
+Expires: 13 October 2024                                   11 April 2024
 
 
           TCP-AO Protection for BGP Monitoring Protocol (BMP)
@@ -67,7 +67,7 @@ Table of Contents
      6.1.  Normative References
      6.2.  Informative References
    Acknowledgments
-   Author's Address
+   Authors' Addresses
 
 1.  Requirements Language
 
@@ -183,8 +183,13 @@ Acknowledgments
    implementing BMP.  While TCP-AO safeguards other TCP protocols, BMP
    currently lacks the same level of protection.
 
-Author's Address
+Authors' Addresses
 
    Hemant Sharma
    Vodafone
    Email: hemant.sharma@vodafone.com
+
+
+   Jeffrey Haas
+   Juniper Networks
+   Email: jhaas@juniper.net
